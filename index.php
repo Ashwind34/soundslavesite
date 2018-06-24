@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Township Rebellion | A Tribute to Rage Against The Machine | San Diego, CA</title>
+<title>SoundSlave | A Tribute to Soundgarden and Audioslave | San Diego, CA</title>
 
-<meta name="description" content="Township Rebellion is a Rage Against the Machine tribute band based in San Diego, CA."/>
-<meta name="keywords" content="Rage, Against, Machine, RATM, San Diego, tribute, band"/>
+<meta name="description" content="SoundSlave is a Soundgarden and Audioslave tribute band based in San Diego, CA."/>
+<meta name="keywords" content="Soundgarden, Audioslave, Chris Cornell, San Diego, tribute, band"/>
 
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
@@ -32,25 +32,29 @@
 	<div class="wrapper">
 
 		<br/>
-		<img class="logo" src="images/logo.png"/>
+		<img class="logo" src="images/tribute7.png"/>
 		<br/>
 
-		<img class="band" src="images/trmusicbox.jpg"/>
+		<img class="band" src="images/bandshot.jpg"/>
 
-		<!-- <h2><u><b>NEXT SHOW</b></u></h2> -->
+		<h2><u><b>NEXT SHOW</b></u></h2>
+		<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
+		<br>
+		<img class="band" src="images/navajoshow.jpg"/>
+		<br>
+		<br>
+		<h2><a href="SSlist/emailform.php"><b>--JOIN OUR MAILING LIST--</b></a></h2>
 		
 		<div class="left">
 			<br>
 			<br>
 			<br>
 			<br>
-			<p style="font-size: 18px">Townshp Rebellion is San Diego's premier Rage Against the Machine tribute band!  
-			The group has been bringing high-powered performances of Rage Against the Machine hits all over 
-			Southern California and Mexico since 2013, making them one of the longest-tenured tribute acts in the area.
-			Whether they're blowing the doors off your local live music bar or packing the floor at San Diego's largest venues, 
-			the group brings a rare combination of authentic passion and exceptional musicianship to every show. Their mission 
-			is to spread the words, music, and political revolutionary spirit of Rage Against the Machine to all corners of the 
-			world long into the future.  Check back often to see where they're rocking next!</p>
+			<p style="font-size: 18px">SoundSlave is Southern California's premier Soundgarden / Audioslave tribute band.  
+			Backed by an talented band made up of some of San Diego's most experienced rock musicians, lead vocalist Yolanda Johnston 
+			delivers powerful and soulful renditions of the late Chris Cornell's most iconic music.  SoundSlave have already played many 
+			of San Diego's biggest venues.  Follow them on Facebook and Instagram, or join their mailing list to stay up to date with 
+			upcoming shows and band happenings!  Loud Love!</p>
 			
 			<br/>
 		</div>
@@ -86,41 +90,48 @@
 
 			<br/>
 			<h3>Contact</h3>
-			<b>Email:</b> <a href="mailto:townshiprebellion.sd@gmail.com"><u>townshiprebellion.sd@gmail.com</u></a><br/>
-			<b>Facebook:</b> <a href="https://www.facebook.com/pages/Township-Rebellion/541296229218846"><u>Find us on Facebook</u></a><br/>
-			<a href="SSlist/emailform.php"><b>--JOIN OUR MAILING LIST--</b></a>
+			<b>Email:</b> <a href="SoundSlaveSanDiego@gmail.com"><u>SoundSlaveSanDiego@gmail.com</u></a><br/>
+			<b>Facebook:</b> <a href="www.facebook.com/SoundSlave.SoundgardenAudioslaveTribute"><u>Follow us on Facebook!</u></a><br/>
+			
 		
 			<br/>
 			<h3>Band Lineup</h3>
-			Saul Origel as Zach de la Rocha - Vocals<br/>
-			Mike Laptewicz as Tom Morello - Guitar<br/>
-			Rick Drake as Tim Commerford - Bass, Backing Vocals<br/>
-			Andy Hester as Brad Wilk - Drums<br/>
+			Yolanda Johnston - Lead Vocals<br/>
+			Mike Laptewicz - Guitars<br/>
+			Alec Peterson - Guitars<br/>
+			Rick Drake - Bass, Backing Vocals<br/>
+			Andy Hester - Drums<br/>
 			
 			<br/>
 			<h3>Song List</h3>
 			<div style="width:40%; float:left;">
-				Bombtrack<br/>
-				Guerilla Radio<br/>
-				Bulls on Parade<br/>
-				Bullet in the Head<br/>
-				Sleep Now in the Fire<br/>
-				Know Your Enemy<br/>
-				Freedom<br/>
-				How I Could Just Kill a Man<br/>
-				Wake Up<br/>
-				
+				<u><i>Soundgarden</i></u><br><br>
+				Loud Love<br>
+				Birth Ritual<br>
+				Rusty Cage<br>
+				Outshined<br>
+				Slaves and Bulldozers<br>
+				Jesus Christ Pose<br>
+				My Wave<br>
+				Fell on Black Days<br>
+				Black Hole Sun<br>
+				Spoonman<br>
+				Pretty Noose<br>
+				Ty Cobb<br>
+				Burden in my Hand<br>
+				Been Away Too Long<br>
 			</div>
+			
 			<div style="width:40%; float:left;">
-				Testify<br/>
-				Killing in the Name<br/>
-				Calm Like a Bomb<br/>
-				People of the Sun<br/>
-				Take the Power Back<br/>
-				No Shelter<br/>
-				Kick Out the Jams<br/>
-				Born of Broken Man<br/>
-				I'm Housin'<br/>
+				<u><i>Audioslave</i></u><br><br>
+				Cochise<br>
+				Show Me How to Live<br>
+				Gasoline<br>
+				Like a Stone<br>
+				Set it Off<br>
+				Be Yourself<br>
+				Your Time Has Come<br>
+				
 			</div>
 		
 		</div>
@@ -137,8 +148,11 @@
 
 			<?php
 
+			$bandnames = array("Yolanda", "Mike", "Alec", "Ricky", "Andy" );
+
 			for($count = 1; $count <= 18; $count+=3) {
-		
+			
+			echo '<h2>' . $bandnames[$count] . '</h2>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . $count . ').jpg"><img src="images/gallery/thumbs/thumb(' . $count . ').jpg"/></a>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 1) . ').jpg"><img src="images/gallery/thumbs/thumb(' . ($count + 1) . ').jpg"/></a>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 2) . ').jpg"><img class="last" src="images/gallery/thumbs/thumb(' . ($count + 2) . ').jpg"/></a>';

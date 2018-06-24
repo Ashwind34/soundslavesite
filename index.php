@@ -32,18 +32,21 @@
 	<div class="wrapper">
 
 		<br/>
-		<img class="logo" src="images/tribute7.png"/>
+		<img class="logo" src="images/logo3.jpg"/>
 		<br/>
 
-		<img class="band" src="images/bandshot.jpg"/>
+		<!-- NEED TO INSERT BAND PHOTO HERE WITH ALL MEMBERS -->
+		<!-- <img class="band" src="images/bandshot.jpg"/> -->
 
 		<h2><u><b>NEXT SHOW</b></u></h2>
 		<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
+		<h2>@ Navajo Live</h2>
+		<h2>8515 Navajo Road, San Diego CA 92119</h2>
 		<br>
 		<img class="band" src="images/navajoshow.jpg"/>
 		<br>
 		<br>
-		<h2><a href="SSlist/emailform.php"><b>--JOIN OUR MAILING LIST--</b></a></h2>
+		<h5 style="color:red"><a href="SSlist/emailform.php"><b><u>JOIN OUR MAILING LIST</u></b></a></h5>
 		
 		<div class="left">
 			<br>
@@ -99,7 +102,7 @@
 			Yolanda Johnston - Lead Vocals<br/>
 			Mike Laptewicz - Guitars<br/>
 			Alec Peterson - Guitars<br/>
-			Rick Drake - Bass, Backing Vocals<br/>
+			Rick Drake - Bass Guitars, Backing Vocals<br/>
 			Andy Hester - Drums<br/>
 			
 			<br/>
@@ -148,11 +151,11 @@
 
 			<?php
 
-			$bandnames = array("Yolanda", "Mike", "Alec", "Ricky", "Andy" );
+			$bandnames = array("1"=>"Yolanda", "4"=>"Mike", "7"=>"Alec", "10"=>"Ricky", "13"=>"Andy" );
 
-			for($count = 1; $count <= 18; $count+=3) {
+			for($count = 1; $count <= 15; $count+=3) {
 			
-			echo '<h2>' . $bandnames[$count] . '</h2>';
+			echo '<h4>' . $bandnames[$count] . '</h4>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . $count . ').jpg"><img src="images/gallery/thumbs/thumb(' . $count . ').jpg"/></a>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 1) . ').jpg"><img src="images/gallery/thumbs/thumb(' . ($count + 1) . ').jpg"/></a>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 2) . ').jpg"><img class="last" src="images/gallery/thumbs/thumb(' . ($count + 2) . ').jpg"/></a>';

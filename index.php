@@ -142,6 +142,8 @@
 		<div class="clear"></div>
 		
 	</div>
+
+	<!-- Photo section -->
 	
 	<div class="photos">
 	
@@ -151,7 +153,11 @@
 
 			<?php
 
+			//set array with manual indexing to use with for loop
+
 			$bandnames = array("1"=>"Yolanda", "4"=>"Mike", "7"=>"Alec", "10"=>"Ricky", "13"=>"Andy" );
+
+			//for loop to print rows of three photos with each band member name listed
 
 			for($count = 1; $count <= 15; $count+=3) {
 			

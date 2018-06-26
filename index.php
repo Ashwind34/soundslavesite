@@ -37,16 +37,17 @@
 
 		<!-- NEED TO INSERT BAND PHOTO HERE WITH ALL MEMBERS -->
 		<!-- <img class="band" src="images/bandshot.jpg"/> -->
-
-		<h2><u><b>NEXT SHOW</b></u></h2>
-		<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
-		<h2>@ Navajo Live</h2>
-		<h2>8515 Navajo Road, San Diego CA 92119</h2>
+		<div class="bord">
+			<h2><u><b>NEXT SHOW</b></u></h2>
+			<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
+			<h2>@ Navajo Live</h2>
+			<h2>8515 Navajo Road, San Diego CA 92119</h2>
+			<br>
+			<img class="band" src="images/navajoshow.jpg"/>
+			<br>
+		</div>
 		<br>
-		<img class="band" src="images/navajoshow.jpg"/>
-		<br>
-		<br>
-		<h5 style="color:red"><a href="SSlist/emailform.php"><b><u>JOIN OUR MAILING LIST</u></b></a></h5>
+		<h5><a href="SSlist/emailform.php"><b><u>JOIN OUR MAILING LIST</u></b></a></h5>
 		
 		<div class="left">
 			<br>
@@ -68,11 +69,8 @@
 			<br>
 			<br>
 			<br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/aFNsP0ORCV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<br/>
-			<!-- <iframe width="460" height="259" src="http://www.youtube.com/embed/1I2LRzCDcp8" frameborder="0" allowfullscreen></iframe> -->
-			<br/>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/0D0ocXIWBqg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GaDkLVKSvv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<br>
 						
 		</div>
 		
@@ -149,7 +147,7 @@
 	
 		<div class="wrapper">
 		
-			<h1>Photos</h1>
+			<h1 style="font-size:40px"><u>Photos</u></h1>
 
 			<?php
 
@@ -159,12 +157,12 @@
 
 			//for loop to print rows of three photos with each band member name listed
 
-			for($count = 1; $count <= 15; $count+=3) {
+			for($count = 1; $count <= 7; $count+=3) {
 			
-			echo '<h4>' . $bandnames[$count] . '</h4>';
-			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . $count . ').jpg"><img src="images/gallery/thumbs/thumb(' . $count . ').jpg"/></a>';
-			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 1) . ').jpg"><img src="images/gallery/thumbs/thumb(' . ($count + 1) . ').jpg"/></a>';
-			echo '<a class="fancybox" rel="gallery" href="images/gallery/image(' . ($count + 2) . ').jpg"><img class="last" src="images/gallery/thumbs/thumb(' . ($count + 2) . ').jpg"/></a>';
+			//echo '<h4>' . $bandnames[$count] . '</h4>';
+			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . $count . ').jpg"><img src="images/gallery/thumbs/thumb (' . $count . ').jpg"/></a>';
+			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . ($count + 1) . ').jpg"><img src="images/gallery/thumbs/thumb (' . ($count + 1) . ').jpg"/></a>';
+			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . ($count + 2) . ').jpg"><img class="last" src="images/gallery/thumbs/thumb (' . ($count + 2) . ').jpg"/></a>';
 			
 			}
 			?>

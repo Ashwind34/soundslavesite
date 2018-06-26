@@ -4,8 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>SoundSlave | A Tribute to Soundgarden and Audioslave | San Diego, CA</title>
 
-<meta name="description" content="SoundSlave is a Soundgarden and Audioslave tribute band based in San Diego, CA."/>
-<meta name="keywords" content="Soundgarden, Audioslave, Chris Cornell, San Diego, tribute, band"/>
+<!-- MAKE SURE TO UNCOMMENT META TAGS -->
+
+<!-- <meta name="description" content="SoundSlave is a Soundgarden and Audioslave tribute band based in San Diego, CA."/> -->
+<!-- <meta name="keywords" content="SoundSlave, Soundgarden, Audioslave, Chris Cornell, San Diego, tribute, band"/> -->
 
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
@@ -156,6 +158,8 @@
 			$bandnames = array("1"=>"Yolanda", "4"=>"Mike", "7"=>"Alec", "10"=>"Ricky", "13"=>"Andy" );
 
 			//for loop to print rows of three photos with each band member name listed
+
+			//REPLACE LOOP COUNTER AFTER ALL PICS UPLOADED
 
 			for($count = 1; $count <= 7; $count+=3) {
 			

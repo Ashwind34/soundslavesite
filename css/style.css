@@ -44,7 +44,8 @@ body {
 }
 
 .left {
-	width:48%;
+	font-size:18px;
+	width:45%;
 	float:left;
 	text-align:left;
 }

@@ -34,11 +34,12 @@
 	<div class="wrapper">
 
 		<br/>
-		<img class="logo" src="images/logo3.jpg"/>
+		<img class="logo" src="images/SSWheel2.jpg"/>
 		<br/>
 
-		<!-- NEED TO INSERT BAND PHOTO HERE WITH ALL MEMBERS -->
-		<!-- <img class="band" src="images/bandshot.jpg"/> -->
+		
+		<img class="band" src="images/group2.jpg"/>
+		
 		<div class="bord">
 			<h2><u><b>NEXT SHOW</b></u></h2>
 			<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
@@ -56,7 +57,7 @@
 			<br>
 			<br>
 			<br>
-			<p style="font-size: 18px">SoundSlave is Southern California's premier Soundgarden / Audioslave tribute band.  
+			<p style:"font-size:24px;">SoundSlave is Southern California's premier Soundgarden / Audioslave tribute band.  
 			Backed by an talented band made up of some of San Diego's most experienced rock musicians, lead vocalist Yolanda Johnston 
 			delivers powerful and soulful renditions of the late Chris Cornell's most iconic music.  SoundSlave have already played many 
 			of San Diego's biggest venues.  Follow them on Facebook and Instagram, or join their mailing list to stay up to date with 
@@ -71,9 +72,10 @@
 			<br>
 			<br>
 			<br>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/GaDkLVKSvv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="450" height="315" src="https://www.youtube.com/embed/GaDkLVKSvv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<br>
-						
+			<iframe width="450" height="315" src="https://www.youtube.com/embed/iMnSd0rXPLE?start=25" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<br>			
 		</div>
 		
 		<div class="left">
@@ -95,17 +97,20 @@
 			<h3>Contact</h3>
 			<b>Email:</b> <a href="SoundSlaveSanDiego@gmail.com"><u>SoundSlaveSanDiego@gmail.com</u></a><br/>
 			<b>Facebook:</b> <a href="www.facebook.com/SoundSlave.SoundgardenAudioslaveTribute"><u>Follow us on Facebook!</u></a><br/>
+			<b>Instagram</b> <a href="www.instagram.com/soundslavesandiego/"><u>Follow us on Instagram</u></a><br>
+			<b>ReverbNation</b> <a href="www.reverbnation.com/artist/soundslave5"><u>Check out our online Press Kit at ReverbNation!</u></a>
 			
 		
 			<br/>
 			<h3>Band Lineup</h3>
-			Yolanda Johnston - Lead Vocals<br/>
-			Mike Laptewicz - Guitars<br/>
-			Alec Peterson - Guitars<br/>
-			Rick Drake - Bass Guitars, Backing Vocals<br/>
-			Andy Hester - Drums<br/>
-			
+			Yolanda Johnston - Lead Vocals<br>
+			Mike Laptewicz - Guitars<br>
+			Alec Peterson - Guitars<br>
+			Rick Drake - Bass Guitars, Backing Vocals<br>
+			Andy Hester - Drums<br>
+						
 			<br/>
+			
 			<h3>Song List</h3>
 			<div style="width:40%; float:left;">
 				<u><i>Soundgarden</i></u><br><br>
@@ -159,9 +164,7 @@
 
 			//for loop to print rows of three photos with each band member name listed
 
-			//REPLACE LOOP COUNTER AFTER ALL PICS UPLOADED
-
-			for($count = 1; $count <= 7; $count+=3) {
+			for($count = 1; $count <=15 ; $count+=3) {
 			
 			//echo '<h4>' . $bandnames[$count] . '</h4>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . $count . ').jpg"><img src="images/gallery/thumbs/thumb (' . $count . ').jpg"/></a>';

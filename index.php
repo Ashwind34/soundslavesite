@@ -34,7 +34,7 @@
 	<div class="wrapper">
 
 		<br/>
-		<img class="logo" src="images/SSWheel2.jpg"/>
+		<img class="logo" src="images/sswheel2.jpg"/>
 		<br/>
 
 		
@@ -43,7 +43,7 @@
 		<div class="bord">
 			<h2><u><b>NEXT SHOW</b></u></h2>
 			<h2>Saturday, July 14th with 10,000 Dudes (Tool Tribute)</h2>
-			<h2>@ Navajo Live</h2>
+			<h2>@ Navajo Live - 8PM</h2>
 			<h2>8515 Navajo Road, San Diego CA 92119</h2>
 			<br>
 			<img class="band" src="images/navajoshow.jpg"/>
@@ -164,8 +164,9 @@
 
 			//for loop to print rows of three photos with each band member name listed
 
-			for($count = 1; $count <=15 ; $count+=3) {
+			for($count = 1; $count <=30 ; $count+=3) {
 			
+			//ADD THIS BACK IN IF YOU NEED ROWS DESIGNATED FOR PARTICULAR BAND MEMBERS
 			//echo '<h4>' . $bandnames[$count] . '</h4>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . $count . ').jpg"><img src="images/gallery/thumbs/thumb (' . $count . ').jpg"/></a>';
 			echo '<a class="fancybox" rel="gallery" href="images/gallery/image (' . ($count + 1) . ').jpg"><img src="images/gallery/thumbs/thumb (' . ($count + 1) . ').jpg"/></a>';

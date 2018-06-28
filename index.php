@@ -72,9 +72,9 @@
 			<br>
 			<br>
 			<br>
-			<iframe width="450" height="315" src="https://www.youtube.com/embed/GaDkLVKSvv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/GaDkLVKSvv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<br>
-			<iframe width="450" height="315" src="https://www.youtube.com/embed/iMnSd0rXPLE?start=25" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="315" src="https://www.youtube.com/embed/iMnSd0rXPLE?start=25" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<br>			
 		</div>
 		

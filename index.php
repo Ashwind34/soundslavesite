@@ -164,7 +164,7 @@
 
 			//for loop to print rows of three photos with each band member name listed
 
-			for($count = 1; $count <=30 ; $count+=3) {
+			for($count = 1; $count <=35; $count+=3) {
 			
 			//ADD THIS BACK IN IF YOU NEED ROWS DESIGNATED FOR PARTICULAR BAND MEMBERS
 			//echo '<h4>' . $bandnames[$count] . '</h4>';

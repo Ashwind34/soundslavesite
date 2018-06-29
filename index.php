@@ -59,7 +59,7 @@
 			<br>
 			<p style:"font-size:24px;">SoundSlave is Southern California's premier Soundgarden / Audioslave tribute band.  
 			Backed by an talented band made up of some of San Diego's most experienced rock musicians, lead vocalist Yolanda Johnston 
-			delivers powerful and soulful renditions of the late Chris Cornell's most iconic music.  SoundSlave have already played many 
+			delivers powerful and soulful renditions of the late Chris Cornell's most iconic music.  SoundSlave is already playing many 
 			of San Diego's biggest venues.  Follow them on Facebook and Instagram, or join their mailing list to stay up to date with 
 			upcoming shows and band happenings!  Loud Love!</p>
 			
@@ -112,7 +112,7 @@
 			<br/>
 			
 			<h3>Song List</h3>
-			<div style="width:40%; float:left;">
+			<div style="width:40%; float:left; font-size:18px;">
 				<u><i>Soundgarden</i></u><br><br>
 				Loud Love<br>
 				Birth Ritual<br>
@@ -130,7 +130,7 @@
 				Been Away Too Long<br>
 			</div>
 			
-			<div style="width:40%; float:left;">
+			<div style="width:40%; float:left; font-size:18px;">
 				<u><i>Audioslave</i></u><br><br>
 				Cochise<br>
 				Show Me How to Live<br>

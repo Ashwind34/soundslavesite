@@ -72,7 +72,7 @@ if (!empty($_POST['register'])) {
 	
 ?>
 
-<p><img src="tribute 7.png" alt="logo" height="315" width="600"></p>
+<p><img src="tribute 7.png" alt="logo"</p>
 <br>
 <p style="font-size:25px"><b>NEW FAN INCOMING!!!!</b></p>
 

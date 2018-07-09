@@ -72,8 +72,7 @@ if (!empty($_POST['register'])) {
 	
 ?>
 
-
-<p></p><img src="tribute 7.png" alt="logo" class="responsive"></p>
+<p><img src="tribute 7.png" alt="logo" class="responsive"></p>
 <br>
 <p style="font-size:25px"><b>NEW FAN INCOMING!!!!</b></p>
 
@@ -90,6 +89,5 @@ if (!empty($_POST['register'])) {
 	<p><a href="../index.php">Return to Homepage</a></p>
 
 </form>
-
 </body>
 </html>

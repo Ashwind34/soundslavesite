@@ -16,15 +16,12 @@
         border-radius: 1em;
     }
 
-    form div + div {
-        
-    }
-
     label {
     /* To make sure that all labels have the same size and are properly aligned */
         display: inline-block;
         width: 360px;
         text-align: left;
+        color:white;
     }
 
     input, textarea {
@@ -60,7 +57,11 @@
     }
 
     body {
-        /* background-color:black */
+        background-color:black
+    }
+
+    p {
+        text-align:center;
     }
 </style>
 <body>
@@ -71,7 +72,7 @@ require_once('pdo_connect.php');
 
 	//Check to make sure form is empty
 
-if (!empty($_POST['register'])) {
+if (isset($_POST['register'])) {
 	
 		//check to make sure all fields completed
 		
@@ -139,14 +140,13 @@ if (!empty($_POST['register'])) {
 
 <p><img src="tribute 7.png" alt="logo" height="315" width="600"></p>
 <br>
-<p style="font-size:25px"><b>NEW FAN INCOMING!!!!</b></p>
 
 <form action="ticketform.php" method="post">
 
 <div class="row">
         <div class="large-8 small-centered columns">
             <fieldset>
-                <legend>Ticket Request</legend>
+                <legend style="color:yellow;font-size:25px;"><b>Ticket Request</b></legend>
                 <div class="row">
                     <div class="small-2 columns">
                         <label for="fname">First Name</label>
@@ -213,34 +213,10 @@ if (!empty($_POST['register'])) {
         </div>
     </div>
 	
-	<!-- <p>First Name <input type="text" name="fname"></p><br>
-	
-	<p>Last Name <input type="text" name="lname"></p><br>
-	
-	<p>Number of Tickets <input type="text" name="tickets"></p><br> 
-
-	<p>Address Line 1 <input type="text" name="add1"></p><br>
-
-	<p>Address Line 2 <input type="text" name="add2"></p><br>
-
-	<p>City <input type="text" name="city"></p><br>
-
-	<p>State <input type="text" name="state"></p><br>
-
-	<p>ZIP <input type="text" name="zip"></p><br> -->
-	
-	<p><input type="submit" name="register" value="Request Tickets"></p><br>
+	<p><input type="submit" name="register" value="Request Tickets"></p>
 	
 	<p><a href="../index.php">Return to Homepage</a></p>
 
 </form>
-
-<form>
-    
-</form>
-
-
-
-
 </body>
 </html>

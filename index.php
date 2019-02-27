@@ -48,6 +48,7 @@
 			<br>
 			<img class="band" src="images/navajoshow.jpg"/>
 			<br>
+			<h5><a href="fanlist/SSlist/ticketform.php"><b><u>GET TICKETS HERE!</u></b></a></h5>
 		</div>
 		<br>
 		<h5><a href="SSlist/emailform.php"><b><u>JOIN OUR MAILING LIST</u></b></a></h5>

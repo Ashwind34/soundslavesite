@@ -62,6 +62,13 @@
 
     p {
         text-align:center;
+        color:white;
+    }
+    a:link {
+        color:yellow;
+    }
+    a:visited {
+        color:red;
     }
 </style>
 <body>
@@ -74,67 +81,60 @@ require_once('pdo_connect.php');
 
 if (isset($_POST['register'])) {
 	
-		//check to make sure all fields completed
+    //check to make sure all fields completed
+    $fieldcheck = array('fname', 'lname', 'tickets', 'add1', 'city', 'state', 'zip');
+    $error = FALSE;
+    foreach ($fieldcheck as $f) {
+        if (empty($_POST[$f])) {
+           $error = TRUE;
+       }
+    }
+    if($error) {
+        echo '<br><p style="font-size:20px">Please complete all fields.</p>';
+        echo '<br><p style="font-size:20px;"><a href="ticketform.php">Try Again</a></p>';
+        echo '<br><p><a href="../../index.php">Return to Homepage</a></p>';
+        exit();
+    }
+    else {
+
+        //Prepared Statement 
+                
+        $query = "INSERT INTO ticketlist (fname, lname, tickets, Add1, Add2, City, State, Zip) 
+                    VALUES (:fname, :lname, :tickets, :add1, :add2, :city, :state, :zip)";					
+        
+        $submit = $conn->prepare($query);
+        
+        //bind parameters
+        
+        $submit->BindParam(':fname', $_POST['fname']);
+        $submit->BindParam(':lname', $_POST['lname']);
+        $submit->BindParam(':tickets', $_POST['tickets']);
+        $submit->BindParam(':add1', $_POST['add1']);
+        $submit->BindParam(':add2', $_POST['add2']);
+        $submit->BindParam(':city', $_POST['city']);
+        $submit->BindParam(':state', $_POST['state']);
+        $submit->BindParam(':zip', $_POST['zip']);
+            
+        //Submit query to database
+
+        if ($submit->execute()) {
+
+            echo '<br><p style="font-size:20px">Ticket Request Submitted!</p>';
+            echo '<p><a href="../../index.php">Return to Homepage</a></p>';
+            exit();
+
+                            
+        } else {
+            
+            echo '<br><p style="font-size:20px">Problem with request.  Please try again.</p>';
+            echo '<br><p style="font-size:20px;"><a href="ticketform.php">Try Again</a></p>';
+            echo '<p><a href="../../index.php">Return to Homepage</a></p>';
+            exit();
+                            
+        }
+    } 
+}
 		
-		// if (!empty($_POST['email'])) {
-
-		// 	//check to make sure email is not already on list
-
-		// 	$emailquery = $conn->prepare("SELECT * FROM fantable WHERE email= :email");
-
-		// 	$emailquery->BindParam(':email', $_POST['email']);
-
-		// 	$emailquery->execute();
-
-		// 	$emailqtable=$emailquery->fetchall(PDO::FETCH_ASSOC);
-
-		// 	if (count($emailqtable) == 0) {
-			
-			//Prepared Statement 
-					
-			$query = "INSERT INTO ticketlist (fname, lname, tickets, Add1, Add2, City, State, Zip) 
-						VALUES (:fname, :lname, :tickets, :add1, :add2, :city, :state, :zip)";					
-			
-			$submit = $conn->prepare($query);
-			
-			//bind parameters
-			
-			$submit->BindParam(':fname', $_POST['fname']);
-			$submit->BindParam(':lname', $_POST['lname']);
-			$submit->BindParam(':tickets', $_POST['tickets']);
-			$submit->BindParam(':add1', $_POST['add1']);
-			$submit->BindParam(':add2', $_POST['add2']);
-			$submit->BindParam(':city', $_POST['city']);
-			$submit->BindParam(':state', $_POST['state']);
-			$submit->BindParam(':zip', $_POST['zip']);
-				
-			//Submit query to database
-
-			if ($submit->execute()) {
-
-				echo '<br><p style="font-size:20px">New Fan Updated Successfully!</p>';
-								
-			} else {
-				
-				echo '<br><p style="font-size:20px">Problem with Registration.  Please try again.</p>';
-				echo '<br><p style="font-size:20px;"><a href="emailform.php">Try Again</a></p>';
-								
-			}
-
-		// } else {
-
-		// 	echo '<br><p style="font-size:20px">Already on the list!</p>';
-			
-		// }
-					
-		} else {
-					
-			echo '<br><p style="font-size:20px">Please complete all fields.</p>';
-			echo '<br><p style="font-size:20px;"><a href="register.php">Try Again</a></p>';
-								
-		}
-
-// }		
 	
 ?>
 
@@ -206,7 +206,7 @@ if (isset($_POST['register'])) {
                         <label class="inline left" for="zip">Zip Code</label>
                     </div>
                     <div class="small-3 columns">
-                        <input type="text" id="zip"></input>
+                        <input type="text" id="zip" name="zip"></input>
                     </div>
                 </div>    
             </fieldset>   
@@ -215,7 +215,7 @@ if (isset($_POST['register'])) {
 	
 	<p><input type="submit" name="register" value="Request Tickets"></p>
 	
-	<p><a href="../index.php">Return to Homepage</a></p>
+	<p><a href="../../index.php">Return to Homepage</a></p>
 
 </form>
 </body>

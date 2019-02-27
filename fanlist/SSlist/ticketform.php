@@ -6,15 +6,62 @@
 </head>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <style>
-p
-{
-	text-align:center;
-	color: white;
-}
-body
-	{
-		background-color:black;
-	}
+    form {
+    /* Just to center the form on the page */
+        margin: 0 auto;
+        width: 400px;
+        /* To see the outline of the form */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+
+    form div + div {
+        
+    }
+
+    label {
+    /* To make sure that all labels have the same size and are properly aligned */
+        display: inline-block;
+        width: 360px;
+        text-align: left;
+    }
+
+    input, textarea {
+    /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+        font: 1em sans-serif;
+        /* To give the same size to all text fields */
+        width: 300px;
+        box-sizing: border-box; /* To harmonize the look & feel of text field border */
+        border: 1px solid #999;
+    }
+
+    input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+        border-color: #000;
+    }
+
+    textarea {
+    /* To properly align multiline text fields with their labels */
+        vertical-align: top;
+    /* To give enough room to type some text */
+        height: 5em;
+    }
+
+    .button {
+    /* To position the buttons to the same position of the text fields */
+        padding-left: 90px;
+    /* same size as the label elements */
+    }
+
+    button {
+    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+        margin-left: .5em;
+    }
+
+    body {
+        /* background-color:black */
+    }
 </style>
 <body>
 
@@ -59,10 +106,6 @@ if (!empty($_POST['register'])) {
 			$submit->BindParam(':city', $_POST['city']);
 			$submit->BindParam(':state', $_POST['state']);
 			$submit->BindParam(':zip', $_POST['zip']);
-
-			//USE THIS LATER ONCE YOU CAN UNENCRYPT EMAILS WHEN EXPORTING TO SPREADSHEET
-			//$submit->BindParam(':password', password_hash($_POST['email'], PASSWORD_BCRYPT));
-			
 				
 			//Submit query to database
 
@@ -99,8 +142,78 @@ if (!empty($_POST['register'])) {
 <p style="font-size:25px"><b>NEW FAN INCOMING!!!!</b></p>
 
 <form action="ticketform.php" method="post">
+
+<div class="row">
+        <div class="large-8 small-centered columns">
+            <fieldset>
+                <legend>Ticket Request</legend>
+                <div class="row">
+                    <div class="small-2 columns">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="fname" name="fname"></input>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="small-2 columns">
+                        <label class="inline left" for="lname">Last Name</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="lname" name="lname"></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-4 columns">
+                        <label class="inline left" for="tickets">Number of Tickets Requested</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="tickets" name="tickets"></input>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="small-4 columns">
+                        <label class="inline left" for="add1">Address Line 1</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="add1" name="add1"></input>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="small-4 columns">
+                        <label class="inline left" for="add2">Address Line 2</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="add2" name="add2"></input>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="small-2 columns">
+                        <label class="inline left" for="city">City</label>
+                    </div>
+                    <div class="small-10 columns">
+                        <input type="text" id="city" name="city"></input>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="small-2 columns">
+                        <label class="inline left" for="state">State</label>
+                    </div>
+                    <div class="small-5 columns">
+                        <input type="text" id="state" name="state"></input>
+                    </div>
+                    <div class="small-2 columns">
+                        <label class="inline left" for="zip">Zip Code</label>
+                    </div>
+                    <div class="small-3 columns">
+                        <input type="text" id="zip"></input>
+                    </div>
+                </div>    
+            </fieldset>   
+        </div>
+    </div>
 	
-	<p>First Name <input type="text" name="fname"></p><br>
+	<!-- <p>First Name <input type="text" name="fname"></p><br>
 	
 	<p>Last Name <input type="text" name="lname"></p><br>
 	
@@ -114,12 +227,20 @@ if (!empty($_POST['register'])) {
 
 	<p>State <input type="text" name="state"></p><br>
 
-	<p>ZIP <input type="text" name="zip"></p><br>
+	<p>ZIP <input type="text" name="zip"></p><br> -->
 	
 	<p><input type="submit" name="register" value="Request Tickets"></p><br>
 	
 	<p><a href="../index.php">Return to Homepage</a></p>
 
 </form>
+
+<form>
+    
+</form>
+
+
+
+
 </body>
 </html>

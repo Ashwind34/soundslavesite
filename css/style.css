@@ -55,6 +55,15 @@ body {
 	text-align:left;
 }
 
+.responsive {
+    max-width: 100%;
+    height: auto;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 a, a:link {
 	color:#ebb010;
 	text-decoration:none;
